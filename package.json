@@ -1,0 +1,25 @@
+{
+  "name": "source-of-element-plus",
+  "version": "1.0.0",
+  "description": "分析 element-plus 源码",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otto-J/source-of-element-plus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Otto-J/source-of-element-plus/issues"
+  },
+  "homepage": "https://github.com/Otto-J/source-of-element-plus#readme",
+  "devDependencies": {
+    "vitepress": "^0.20.0"
+  }
+}
