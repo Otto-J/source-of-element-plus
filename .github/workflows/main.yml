@@ -23,8 +23,6 @@ jobs:
           version: 6.20.2
           run_install: true
 
-      # todo 这里的 user 和 email 和 GitHub url 都使用变量
-
       - name: Build
         run: pnpm run docs:build
 
@@ -33,8 +31,8 @@ jobs:
           cd docs/.vitepress/dist
           git init
           git config init.defaultBranch master
-          git config user.email "{{secrets.EMAIL}}"
-          git config user.name "Otto"
+          git config user.email "${{secrets.EMAIL}}"
+          git config user.name "${{github.repository_owner}}"
           git add -A
           git commit -m 'deploy'
-          git push -f https://Otto:${{ secrets.TOKEN }}@github.com/Otto-J/source-of-element-plus.git master:gh-pages
+          git push -f https://${{github.repository_owner}}:${{ secrets.TOKEN }}@github.com/${{GITHUB_REPOSITORY}}.git master:gh-pages
