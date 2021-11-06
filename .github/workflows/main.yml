@@ -35,4 +35,4 @@ jobs:
           git config user.name "${{github.repository_owner}}"
           git add -A
           git commit -m 'deploy'
-          git push -f https://${{github.repository_owner}}:${{ secrets.TOKEN }}@github.com/${{GITHUB_REPOSITORY}}.git master:gh-pages
+          git push -f https://${{github.repository_owner}}:${{ secrets.TOKEN }}@github.com/${{github.GITHUB_REPOSITORY}}.git master:gh-pages
