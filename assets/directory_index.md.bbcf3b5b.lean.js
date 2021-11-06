@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a as o}from"./app.bbb21bbd.js";const m='{"title":"\u76EE\u5F55\u7ED3\u6784","description":"","frontmatter":{"title":"\u76EE\u5F55\u7ED3\u6784"},"relativePath":"directory/index.md","lastUpdated":1636158420706}',s={},r=o('',5),i=[r];function l(n,c,_,p,d,u){return a(),t("div",null,i)}var b=e(s,[["render",l]]);export{m as __pageData,b as default};
