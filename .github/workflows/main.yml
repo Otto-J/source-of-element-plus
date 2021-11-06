@@ -29,8 +29,8 @@ jobs:
       - name: Deploy to Pages
         run: |
           cd docs/.vitepress/dist
+          git config --global init.defaultBranch master
           git init
-          git config init.defaultBranch master
           git config user.email "${{secrets.EMAIL}}"
           git config user.name "${{github.repository_owner}}"
           git add -A
